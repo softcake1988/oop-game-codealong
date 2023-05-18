@@ -2,14 +2,14 @@
 
 class Player {
     constructor(){
-        this.positionX = 50; // property: horizontal movement in %
-        this.positionY = 0; // property: vertical movement in %
         this.width = 20;  // property for object width in %
-        this.height = 20;  // property for object height in %
+        this.height = 10;  // property for object height in %        
+        this.positionX = 50 - this.width/2; // property: horizontal movement in %
+        this.positionY = 0; // property: vertical movement in %
 
-        this.createDomElement(); // reference to createDomElement method below
+        this.createDomElement = null; // reference to createDomElement method below
         
-        this.domElement; // to be able to be reached from every scope
+        this.domElement = null; // to be able to be reached from every scope
    
     }
 
@@ -46,11 +46,10 @@ class Player {
 
 class Obstacle {
     constructor(){
-        this.positionX = 50; // property: horizontal movement in %
-        this.positionY = 100; // property: vertical movement in %
         this.width = 20;  // property for object width in %
         this.height = 10;  // property for object height in %
-
+        this.positionX = 50 - this.width/2; // property: horizontal movement in %
+        this.positionY = 100; // property: vertical movement in %
         this.domElement;
 
         this.createDomElement();
