@@ -1,3 +1,16 @@
 body {
     background-color: #ffe09c;
+    margin: 0; /* adjusting default value to 0 for whole body*/
+    padding: 0; /* adjusting default value to 0 for whole body*/
+}
+
+#board {
+    background-color: aqua;
+    height: 100vh;/* px for absolute unit, we are doing relative units for responsiveness*/
+    position: relative;
+}
+#player {
+    background-color: rgb(238, 153, 211);
+    position: absolute;
+    
 }
