@@ -98,9 +98,24 @@ setInterval(() => {
 // intervall in dem sich jedes Objekt nach unten bewegt, alle 0,6 Sekunden
 setInterval(() => {
     obstaclesArray.forEach((obstacleInstance) => {
+
         obstacleInstance.moveDown(); // using method moveDown 
+
+        
+
+        // checking for collision between obstacle and Player every time obstacle started
+        if 
+            (obstacleInstance.positionX < player.positionX + player.width &&
+            obstacleInstance.positionX + obstacleInstance.width > player.positionX &&
+            obstacleInstance.positionY < player.positionY + player.height &&
+            obstacleInstance.height + obstacleInstance.positionY > player.positionY) {
+          
+                location.href = "./gameover.html";
+        
+            }
+
     }); 
-}, 60)
+}, 60);
 
 
 // add eventListeners to player
