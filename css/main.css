@@ -8,9 +8,17 @@ body {
     background-color: aqua;
     height: 100vh;/* px for absolute unit, we are doing relative units for responsiveness*/
     position: relative;
+    
+    
 }
+
 #player {
-    background-color: rgb(238, 153, 211);
+    background-color: rgb(237, 79, 224);
     position: absolute;
     
+}
+
+.obstacle {
+    background-color: rgb(96, 52, 137);
+    position: absolute;
 }
